@@ -1,4 +1,4 @@
-# Digi Parse
+# Digi Parse WIP
 
 I really wanted to get some data from a web page ([this one](https://digimon.fandom.com/wiki/Digimon_Digital_Card_Battle/Cards), to be exact), but it was all in tables, and not easily copy-able, so I decided to write a script to parse the html from the webpage ([`source.html`](../source.html)) and convert it into a CSV that I could load into a database. How exactly I'll use that data is TBD...
 
