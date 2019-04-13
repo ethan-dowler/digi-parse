@@ -1,0 +1,12 @@
+{
+  "name": "digi-parse",
+  "version": "1.0.0",
+  "description": "parsing html for card data",
+  "author": "Ethan Dowler",
+  "dependencies": {
+    "prettier": "^1.17.0"
+  },
+  "scripts": {
+    "prettier": "prettier --write ./*.html"
+  }
+}
