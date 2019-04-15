@@ -48,12 +48,21 @@ def parse_rows
   puts "done parsing rows!"
 end
 
-def parse_digivolve_option_card(lines)
-  []
-end
-
-def parse_support_option_card(lines)
-  []
+def parse_option_card(lines)
+  [
+    nil,
+    nil,
+    nil,
+    nil,
+    nil,
+    nil,
+    nil,
+    nil,
+    nil,
+    nil,
+    lines[4],
+    nil,
+  ]
 end
 
 def parse_digimon_card(lines)
@@ -121,10 +130,8 @@ def parse_card_data
         ]
 
         row +=
-          if row[0].to_i >= 293
-            parse_digivolve_option_card(lines)
-          elsif row[0].to_i >= 191
-            parse_support_option_card(lines)
+          if row[0].to_i >= 191
+            parse_option_card(lines)
           else
             parse_digimon_card(lines)
           end
